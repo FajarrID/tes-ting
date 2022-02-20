@@ -1360,7 +1360,7 @@ break
             break
             case 'yuri': {
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('Kyouka', '/api/nsfw/yuri/'+command, 'apikey') }, caption: `Download From ${text}` }, { quoted: m})
+                hisoka.sendMessage(m.chat, { image: { url: api('https://wibuteam.herokuapp.com/api/nsfw/yuri?apikey=nobody') }, caption: `Download From ${text}` }, { quoted: m})
             }
             break
 	    case 'couple': {
