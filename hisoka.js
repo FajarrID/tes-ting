@@ -1358,9 +1358,9 @@ break
                 hisoka.sendMessage(m.chat, { image: { url: result }, caption: '⭔ Media Url : '+result }, { quoted: m })
             }
             break
-            case 'anime': case 'waifu': case 'husbu': case 'neko': case 'shinobu': case 'megumin': {
+            case 'yuri': {
                 m.reply(mess.wait)
-                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/random/anime/'+command, 'apikey') }, caption: `Download From ${text}` }, { quoted: m})
+                hisoka.sendMessage(m.chat, { image: { url: api('zenz', '/api/nsfw/yuri/'+command, 'apikey') }, caption: `Download From ${text}` }, { quoted: m})
             }
             break
 	    case 'couple': {
