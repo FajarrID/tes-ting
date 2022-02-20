@@ -1363,6 +1363,15 @@ break
                 hisoka.sendMessage(m.chat, { image: { url: api('https://wibuteam.herokuapp.com/api/nsfw/yuri?apikey=nobody') }, caption: `Download From ${text}` }, { quoted: m})
             }
             break
+            case 'ass':
+                if (isLimit(sender)) return
+                await limitAdd(sender)
+                if (isBanned) return reply("MAAF ANDA TELAH DI BANNED") 			   
+                reply(prosess)
+                nyz1 = await fetchJson(`https://wibuteam.herokuapp.com/api/nsfw/ass?apikey=nobody`)
+                nyz2 = await getBuffer(nyz1.result.list)
+                hisoka.sendImage(nyz2, "Nih foto " + command + " nya kak:)")
+                break
 	    case 'couple': {
                 m.reply(mess.wait)
                 let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
